@@ -1,0 +1,6 @@
+app_registry:
+   hostname: gcr.io
+   repository_prefix: gcr.io/<GCP_PROJECT_ID>/cf-workloads
+   username: _json_key
+   password: |
+   <CONTENTS_of_SERVICE_ACCOUNT_JSON>
