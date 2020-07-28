@@ -10,9 +10,9 @@ function do_func
   end
 
   set -lq _flag_address
-  or set -l _flag_address "Hello"
+  or set -l _flag_address cf-for-k8s
 
-  gcloud compute addresses create cf-for-k8s --region (gcloud config get-value compute/region) --format json | jq -r '.[].address'
+  gcloud compute addresses create $_flag_address --region (gcloud config get-value compute/region) --format json | jq -r '.[].address'
 end
 
 do_func $argv
