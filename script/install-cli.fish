@@ -12,4 +12,4 @@ chmod +x ytt
 curl -o kapp https://github.com/k14s/kapp/releases/download/v0.31.0/kapp-linux-amd64
 chmod +x kapp
 
-set PATH (pwd |awk -F '/cf-for-gke-getting-started' '{print $1}')/cf-for-gke-getting-started/script
+set PATH (pwd |awk -F '/cf-for-gke-getting-started' '{print $1}')/cf-for-gke-getting-started/script:$PATH
