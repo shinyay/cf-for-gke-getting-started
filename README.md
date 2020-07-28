@@ -53,6 +53,8 @@ app_registry:
    <CONTENTS_of_SERVICE_ACCOUNT_JSON>
 ```
 
+### Build Cloud Foundry Configuration
+
 ## Demo
 
 ## Features
