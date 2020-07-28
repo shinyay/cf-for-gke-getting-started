@@ -12,6 +12,23 @@ Deploy Cloud Foundry on GKE
 
 ![cloud-dns](images/create-dns.png)
 
+### Configure Cloud Foundry
+
+```
+$ cd cf-for-k8s
+$ mkdir -p config-values tmp 
+$ ./hack/generate-values.sh -d <YOUR_DOMAIN_NAME> > config-values/cf-values.yml
+```
+
+#### Configure Static IP Address
+
+- `cf-for-k8s/config-values/static-ip.yml`
+
+```yaml
+#@data/values
+---
+istio_static_ip: <YOUR_STATIC_IP>
+```
 
 ## Demo
 
