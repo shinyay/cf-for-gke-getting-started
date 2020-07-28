@@ -4,6 +4,15 @@ Deploy Cloud Foundry on GKE
 
 ## Description
 
+### Create GKE Cluster
+
+### Create Static IP address
+
+### Create DNS Record
+
+![cloud-dns](images/create-dns.png)
+
+
 ## Demo
 
 ## Features
