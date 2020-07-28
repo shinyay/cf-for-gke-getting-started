@@ -1,3 +1,6 @@
 [submodule "cf-for-k8s"]
 	path = cf-for-k8s
 	url = https://github.com/cloudfoundry/cf-for-k8s.git
+[submodule "bootstrap-kubernetes-demos"]
+	path = bootstrap-kubernetes-demos
+	url = https://github.com/starkandwayne/bootstrap-kubernetes-demos
