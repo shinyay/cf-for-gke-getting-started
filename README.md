@@ -38,6 +38,20 @@ $ ./hack/generate-values.sh -d <YOUR_DOMAIN_NAME> > config-values/cf-values.yml
 istio_static_ip: <YOUR_STATIC_IP>
 ```
 
+### Create Service Account
+
+### Google Container Registry Configuration
+
+- `cf-for-k8s/config-values/app-registry.yml`
+
+```yaml
+app_registry:
+   hostname: gcr.io
+   repository_prefix: gcr.io/<GCP_PROJECT_ID>/cf-workloads
+   username: _json_key
+   password: |
+   <CONTENTS_of_SERVICE_ACCOUNT_JSON>
+```
 
 ## Demo
 
