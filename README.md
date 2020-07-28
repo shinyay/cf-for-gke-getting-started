@@ -4,6 +4,14 @@ Deploy Cloud Foundry on GKE
 
 ## Description
 
+### Prerequiste CLI
+- cf
+- bosh
+- ytt
+- kapp
+
+Add CLIs to PATH
+
 ### Create GKE Cluster
 
 ### Create Static IP address
@@ -29,6 +37,7 @@ $ ./hack/generate-values.sh -d <YOUR_DOMAIN_NAME> > config-values/cf-values.yml
 ---
 istio_static_ip: <YOUR_STATIC_IP>
 ```
+
 
 ## Demo
 
