@@ -51,6 +51,12 @@ $ bootstrap-kubernetes-demos up --google
 
 ### Create Static IP address
 
+```
+$ gcloud compute addresses create <STATIC_IP_NAME> \
+    --region (gcloud config get-value compute/region) \
+    --format json | jq -r '.[].address'
+```
+
 ### Create DNS Record
 
 ![cloud-dns](images/create-dns.png)
