@@ -93,6 +93,13 @@ $ cf create-space -o test-org test-space
 $ cf target -o test-org -s test-space
 ```
 
+### Deploy Test App
+
+```
+$ cd cf-for-k8s
+$ cf push test-node-app -p tests/smoke/assets/test-node-app
+```
+
 
 ## Demo
 
