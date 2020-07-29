@@ -85,6 +85,15 @@ $ cf auth admin <CF_ADMIN_PASSWORD>
 
 You can find <CF_SYSTEM_DOMAIN> at `cf_admin_password` in `cf-values.yml`
 
+### Create Org and Space
+
+```
+$ cf create-org test-org
+$ cf create-space -o test-org test-space
+$ cf target -o test-org -s test-space
+```
+
+
 ## Demo
 
 ## Features
