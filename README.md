@@ -57,7 +57,10 @@ app_registry:
 
 ### Build Cloud Foundry Configuration
 
-
+```
+$ cd cf-for-k8s
+$ ytt -f config -f config-values > config-values/cf-for-k8s-rendered.yml
+```
 
 ## Demo
 
