@@ -20,6 +20,8 @@ Cloud Foundry Components run on Kubernetes (GKE).
 
 Add CLIs to PATH
 
+- [`script/install-cli.fish `](script/install-cli.fish)
+
 ### Create GKE Cluster
 
 ### Create Static IP address
