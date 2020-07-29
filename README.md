@@ -69,6 +69,12 @@ $ cd cf-for-k8s
 $ kapp deploy -a cf -f config-values/cf-for-k8s-rendered.yml -y
 ```
 
+### Target cf cli to endpoint of Cloud Foundry on GKE
+
+```
+$ cf api --skip-ssl-validation https://api.<CF_SYSTEM_DOMAIN>
+```
+
 ## Demo
 
 ## Features
