@@ -10,9 +10,13 @@ Cloud Foundry Components run on Kubernetes (GKE).
 
 ### Prerequiste CLI
 - cf
+  - [cloudfoundry/cli](https://github.com/cloudfoundry/cli)
 - bosh
+  - [cloudfoundry/bosh-cli](https://github.com/cloudfoundry/bosh-cli)
 - ytt
+  - [k14s/ytt](https://github.com/k14s/ytt)
 - kapp
+  - [k14s/kapp](https://github.com/k14s/kapp)
 
 Add CLIs to PATH
 
