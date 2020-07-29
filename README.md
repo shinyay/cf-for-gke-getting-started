@@ -24,6 +24,24 @@ Add CLIs to PATH after downloading above.
 
 ### Create GKE Cluster
 
+```
+$ gcloud container clusters create <CLUSTER_NAME> \
+    --region us-central1-c \
+    --cluster-version latest \
+    --machine-type n1-standard-4 \
+    --enable-autoscaling \
+    --min-nodes=1 \
+    --max-nodes=5 \
+    --enable-autorepair \
+    --scopes=service-control,service-management,compute-rw,storage-ro,cloud-platform,logging-write,monitoring-write,pubsub,datastore \
+    --num-nodes=3 \
+    --no-enable-basic-auth \
+    --no-issue-client-certificate \
+    --enable-ip-alias \
+    --metadata disable-legacy-endpoints=true
+
+```
+
 ### Create Static IP address
 
 ### Create DNS Record
