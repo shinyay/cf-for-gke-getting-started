@@ -62,6 +62,13 @@ $ cd cf-for-k8s
 $ ytt -f config -f config-values > config-values/cf-for-k8s-rendered.yml
 ```
 
+### Deploy Cloud Foundry on GKE
+
+```
+$ cd cf-for-k8s
+$ kapp deploy -a cf -f config-values/cf-for-k8s-rendered.yml -y
+```
+
 ## Demo
 
 ## Features
