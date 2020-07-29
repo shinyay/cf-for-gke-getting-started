@@ -18,7 +18,7 @@ Cloud Foundry Components run on Kubernetes (GKE).
 - kapp
   - [k14s/kapp](https://github.com/k14s/kapp)
 
-Add CLIs to PATH
+Add CLIs to PATH after downloading above.
 
 - [`script/install-cli.fish `](script/install-cli.fish)
 
