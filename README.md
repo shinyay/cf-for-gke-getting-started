@@ -45,6 +45,8 @@ istio_static_ip: <YOUR_STATIC_IP>
 - `cf-for-k8s/config-values/app-registry.yml`
 
 ```yaml
+#@data/values
+---
 app_registry:
    hostname: gcr.io
    repository_prefix: gcr.io/<GCP_PROJECT_ID>/cf-workloads
@@ -54,6 +56,8 @@ app_registry:
 ```
 
 ### Build Cloud Foundry Configuration
+
+
 
 ## Demo
 
