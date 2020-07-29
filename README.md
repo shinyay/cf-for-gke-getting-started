@@ -75,6 +75,16 @@ $ kapp deploy -a cf -f config-values/cf-for-k8s-rendered.yml -y
 $ cf api --skip-ssl-validation https://api.<CF_SYSTEM_DOMAIN>
 ```
 
+You can find <CF_SYSTEM_DOMAIN> at `system_domain` in `cf-values.yml`
+
+### Login Cloud Foundry on GKE
+
+```
+$ cf auth admin <CF_ADMIN_PASSWORD>
+```
+
+You can find <CF_SYSTEM_DOMAIN> at `cf_admin_password` in `cf-values.yml`
+
 ## Demo
 
 ## Features
