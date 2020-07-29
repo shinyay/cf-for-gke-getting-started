@@ -42,6 +42,13 @@ $ gcloud container clusters create <CLUSTER_NAME> \
 
 ```
 
+or
+
+```
+$ cd bootstrap-kubernetes-demos/bin
+$ bootstrap-kubernetes-demos up --google
+```
+
 ### Create Static IP address
 
 ### Create DNS Record
