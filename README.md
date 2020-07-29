@@ -4,6 +4,10 @@ Deploy Cloud Foundry on GKE
 
 ## Description
 
+Cloud Foundry Components run on Kubernetes (GKE).
+
+![architecture](https://raw.githubusercontent.com/cloudfoundry/cf-k8s-networking/develop/doc/assets/routecontroller-data-flow-diagram.png)
+
 ### Prerequiste CLI
 - cf
 - bosh
