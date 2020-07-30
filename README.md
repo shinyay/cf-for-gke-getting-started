@@ -79,7 +79,16 @@ $ ./hack/generate-values.sh -d <YOUR_DOMAIN_NAME> > config-values/cf-values.yml
 istio_static_ip: <YOUR_STATIC_IP>
 ```
 
-### Create Service Account
+### Create Service Account for Container Registry
+
+```shell
+$ set -l _project (gcloud config get-value project)
+$ set -l _output (pwd |awk -F '/cf-for-gke-getting-started' '{print $1}')/cf-for-gke-getting-started/cf-for-k8s/tmp
+
+$ gcloud iam service-accounts create $_flag_name --display-name $_flag_name
+$ gcloud iam service-accounts keys create --iam-account $_flag_name@$_project.iam.gserviceaccount.com $_output/gcloud-key.json
+$ gcloud projects add-iam-policy-binding $_project --member serviceAccount:$_flag_name@$_project.iam.gserviceaccount.com --role roles/storage.admin
+```
 
 ### Google Container Registry Configuration
 
