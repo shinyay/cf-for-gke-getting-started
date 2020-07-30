@@ -13,9 +13,10 @@ function do_func
   or set -l _flag_name cf-for-gke
 
   set -l _project (gcloud config get-value project)
+  set -l _output (pwd |awk -F '/cf-for-gke-getting-started' '{print $1}')/cf-for-gke-getting-started/cf-for-k8s/tmp
 
   gcloud iam service-accounts create $_flag_name --display-name $_flag_name
-  gcloud iam service-accounts keys create --iam-account $_flag_name@$_project.iam.gserviceaccount.com (pwd |awk -F '/cf-for-gke-getting-started' '{print $1}')/cf-for-gke-getting-started/cf-for-k8s/tmp/gcloud-key.json
+  gcloud iam service-accounts keys create --iam-account $_flag_name@$_project.iam.gserviceaccount.com $_output/gcloud-key.json
   gcloud projects add-iam-policy-binding $_project --member serviceAccount:$_flag_name@$_project.iam.gserviceaccount.com --role roles/storage.admin
 end
 
